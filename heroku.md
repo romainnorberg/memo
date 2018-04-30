@@ -22,6 +22,9 @@ cd -
 
 #### Log filters (settings > log filters)
 
+Doc: https://help.papertrailapp.com/kb/how-it-works/log-filtering/#create-filter
+Validate expression: http://rubular.com/
+
 Example: 
 
 ```
