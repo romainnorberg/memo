@@ -32,5 +32,5 @@ Apr 29 23:20:38 xxxx-app-name heroku/router: at=error code=H12 desc="Request tim
 Apr 30 06:05:03 xxxx-app-name app/web.3: 10.86.164.34 - - [30/Apr/2018:15:05:02 +0200] "GET /signin HTTP/1.1" 301 5263 "-" "Pingdom.com_bot_version_1.4_(http://www.pingdom.com/) 
 ```
 
-- Exlude info _(string mode)_: `heroku/router:  at=info` 
+- Exlude info _(regex mode)_: `heroku\/router: at=(info)` 
 - ...
