@@ -36,4 +36,5 @@ Apr 30 06:05:03 xxxx-app-name app/web.3: 10.86.164.34 - - [30/Apr/2018:15:05:02 
 ```
 
 - Exlude info _(regex mode)_: `heroku\/router: at=(info)` 
+- Exclude info BUT only for < 30000ms response time _(regex mode)_: `heroku\/router: at=(info) (.*) service=(([1|2][0-9]{0,4})|([1-9][0-9]{0,3}))ms (.*)` (regex permalink: http://rubular.com/r/NlKGJlZR7Y)
 - ...
