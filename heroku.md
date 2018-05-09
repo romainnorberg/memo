@@ -18,6 +18,12 @@ export PATH="$HOME/vim:$PATH"
 cd -
 ```
 
+### force push to deploy specific branch
+```
+git remote add preprod https://git.heroku.com/project-preprod.git
+git push preprod <specific-branch>:master -f
+```
+
 ### [Add-on] Papertrail
 
 #### Log filters (settings > log filters)
