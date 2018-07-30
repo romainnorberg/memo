@@ -14,3 +14,14 @@ Check `wait_timeout` & `max_allowed_packet` values. :up: Up the value if necessa
 
 ### InnoDB Deadlocks (detect)
 `SHOW ENGINE INNODB STATUS;`
+
+### Show the size of a table (& index)
+```
+SELECT 
+     table_schema as `Database`, 
+     table_name AS `Table`, 
+     round(((data_length + index_length) / 1024 / 1024), 2) `Size in MB`,
+     round(((index_length) / 1024 / 1024), 2) `Index Size in MB`
+FROM information_schema.TABLES 
+ORDER BY (data_length + index_length) DESC;
+```
