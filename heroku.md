@@ -24,6 +24,9 @@ git remote add preprod https://git.heroku.com/project-preprod.git
 git push preprod <specific-branch>:master -f
 ```
 
+### update/add env. var from file
+`heroku config:set GOOGLE_SQL_PROXY_KEY="$(< /my/key_file.json)"  --app=xxxx-preprod`
+
 ### [Add-on] Papertrail
 
 #### Log filters (settings > log filters)
