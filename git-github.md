@@ -24,9 +24,16 @@ git merge feature_branch
 git reset origin/master
 
 # Git now considers all changes as unstaged changes.
+# Delete feature branch
+git branch -D <feature-branch>
+git checkout -b <feature-branch>
+
 # We can add these changes as one commit.
 # Adding . will also add untracked files.
 git add --all
 git commit
+
+# Force push
+git push -f
 ```
 
