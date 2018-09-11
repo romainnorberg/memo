@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ssh_color () {
+    ~/.bashrc.d/iterm/ssh_color.py $*  # I put script in /usr/local/bin/
+    trap 'echo -e "\033]6;1;bg;*;default\a"' INT EXIT
+    ssh $*
+}
+
+ssh_color $*
