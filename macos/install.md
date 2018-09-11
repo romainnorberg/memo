@@ -20,3 +20,6 @@
 # Nodejs
 - `npm install -g nodemon`
 
+# Various
+- `npm install -g gitmoji-commit-hook` (doc: https://github.com/tjoskar/gitmoji-commit-hook)
+
