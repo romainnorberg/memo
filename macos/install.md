@@ -14,7 +14,7 @@
 - `brew install bat` _(doc: https://remysharp.com/2018/08/23/cli-improved)_
 - `brew install node`
 - `npm install diff-so-fancy -g`
-- copy `.bashrc.d` dir to home directory
+- copy `bashrc.d` [directory](https://github.com/romainnorberg/memo/tree/master/macos/bashrc.d) to home directory and preprend with a dot
 
 # Nodejs
 - `npm install -g nodemon`
