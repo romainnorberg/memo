@@ -1,0 +1,49 @@
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+	
+[merge]
+	tool = Kaleidoscope
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+	prompt = false
+
+[mergetool]
+	prompt = false
+
+[diff]
+	tool = Kaleidoscope
+
+[user]
+	name = Romain Norberg
+	email = romainnorberg@gmail.com
+
+[core]
+	excludesfile = /Users/romainnorberg/.gitexcludes
+	editor = sublime -n -w
+
+[push]
+	default = current
+
+[alias]
+	lsd = log --graph --boundary '--format=%C(yellow)%h%Creset%C(bold cyan)%d%Creset %s %C(dim normal)(%ar)%Creset' --all
+
+[color]
+    interactive = always
+	ui = auto
+
+[color "interactive"]
+    error = red bold
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[pager]
+    diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
