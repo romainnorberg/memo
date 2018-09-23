@@ -25,3 +25,16 @@ SELECT
 FROM information_schema.TABLES 
 ORDER BY (data_length + index_length) DESC;
 ```
+
+## Optimize
+
+### tmp_table_size
+doc: http://techinfobest.com/optimize-mysql-tmp_table_size/
+
+>Tmp_disk_tables=((created_tmp_disk_tables*100/(created_tmp_tables+created_tmp_disk_tables))
+>= ((278571*100/(1617536 + 278571))
+>= 14.69%
+
+>If it exceeds 25% you may consider to increase tmp_table_size
+
+:warning: When making adjustments, make tmp_table_size/max_heap_table_size equal (doc: http://dasini.net/blog/2010/05/28/audit-mysql-tmp_table_size-max_heap_table_size/)
