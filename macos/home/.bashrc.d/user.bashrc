@@ -1,5 +1,5 @@
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (on \1 branch)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 # Wrap git. On errors, print an additional line in red.
@@ -16,9 +16,8 @@ git(){
     fi
 }
 
-# show time, user and full path
-#export PS1='\t \u:\w$ '
-export PS1="\[\033[1m\]\t \u\[\033[00m\]:\[\033[37m\]\w\[\033[00m\]\\[\033[36m\]\$(parse_git_branch)\[\033[00m\]\$ "
+# show time, path and current branch (e.g.: "07:24:53 project (feat-searchEngineEvol)$ ", doc: https://www.ibm.com/developerworks/linux/library/l-tip-prompt/)
+export PS1="\[\e]2;\u@\H \w\a\e[32;1m\]\[\033[1m\]\t \W\[\e[0m\]\[\033[00m\]\\[\033[30m\]\$(parse_git_branch)\[\033[00m\]\$ "
 
 # enable colors mode
 export CLICOLOR=1
