@@ -29,4 +29,5 @@
 
 # Various
 - `npm install -g gitmoji-commit-hook` (doc: https://github.com/tjoskar/gitmoji-commit-hook)
+- `defaults write com.apple.screencapture type jpg` _Save Screenshots as JPG_
 
