@@ -16,6 +16,7 @@
 - `brew install node`
 - `npm install diff-so-fancy -g`
 - copy `bashrc.d` [directory](https://github.com/romainnorberg/memo/tree/master/macos/home/bashrc.d) to home directory
+- `defaults write com.apple.screencapture location /Users/<user>/Desktop/screenshots/` 
 
 ### Step 2
 - take a coffee :coffee:
