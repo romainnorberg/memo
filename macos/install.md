@@ -14,6 +14,7 @@
 - PHP7.2 + COMPOSER: `brew update && brew install php72 && brew install composer && composer -V`
 - `brew install bat` _(doc: https://remysharp.com/2018/08/23/cli-improved)_
 - `brew install node`
+- `brew cask install quicklook-json`
 - `npm install diff-so-fancy -g`
 - copy `bashrc.d` [directory](https://github.com/romainnorberg/memo/tree/master/macos/home/bashrc.d) to home directory
 - `defaults write com.apple.screencapture location /Users/<user>/Desktop/screenshots/` 
