@@ -26,6 +26,11 @@ FROM information_schema.TABLES
 ORDER BY (data_length + index_length) DESC;
 ```
 
+### Count rows (Express)
+```
+SELECT table_rows total FROM information_schema.tables WHERE table_name="<table-name>" AND table_schema="<database-name>”;
+```
+
 ## Optimize
 
 ### tmp_table_size
