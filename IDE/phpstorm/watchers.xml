@@ -21,4 +21,24 @@
       <env name="PHP_CS_FIXER_IGNORE_ENV" value="1" />
     </envs>
   </TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="-r $FilePath$" />
+    <option name="checkSyntaxErrors" value="true" />
+    <option name="description" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="js" />
+    <option name="immediateSync" value="false" />
+    <option name="name" value="js-beautify" />
+    <option name="output" value="$FilePath$" />
+    <option name="outputFilters">
+      <array />
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="/usr/local/bin/js-beautify" />
+    <option name="runOnExternalChanges" value="true" />
+    <option name="scopeName" value="Current File" />
+    <option name="trackOnlyRoot" value="false" />
+    <option name="workingDir" value="" />
+    <envs />
+  </TaskOptions>
 </TaskOptions>
